@@ -1,3 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780316009
+::res://::1780482980
 icon.svg::CompressedTexture2D::2678538779694176350::1780316005::1780316009::1::::<><><>0<>0<>c84500f44685cf466280dc241681a442<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1780316644
+::res://Assets/Pixel art/::1780483164
+Borda da porta.png::CompressedTexture2D::5571691383843379232::1780316651::1780395907::1::::<><><>0<>0<>676898d7f6d16d0c9c9ebb8cb88ea9d7<>res://.godot/imported/Borda da porta.png-b67232294198b71e09d99532f1cab5c5.ctex::
+Dirt.png::CompressedTexture2D::103967268194596182::1780483164::1780483169::1::::<><><>0<>0<>0c13ba315fc9538a32d6f05af44f9e8b<>res://.godot/imported/Dirt.png-59290177702af1b8ba2244b1dce37924.ctex::
+Grass.png::CompressedTexture2D::9175068709540561008::1780483141::1780483169::1::::<><><>0<>0<>9b80287b415e6dc2899d154df9df9b72<>res://.godot/imported/Grass.png-4216d02ec9d70badc71e381d93e8dd12.ctex::
+Porta Vermelha.png::CompressedTexture2D::2840241991731578556::1780316775::1780395907::1::::<><><>0<>0<>6936dd4bcd585c973d7ecdb42024faa5<>res://.godot/imported/Porta Vermelha.png-880ff2af2c14c0084037191eb532e746.ctex::
+::res://Scenes/::1780316617
+level.tscn::PackedScene::3513398111908431133::1780316617::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1780316590
