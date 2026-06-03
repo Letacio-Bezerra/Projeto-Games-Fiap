@@ -1,7 +1,24 @@
 [gd_scene format=3 uid="uid://t4eba58qrakf"]
 
 [ext_resource type="Script" uid="uid://kruotuhycb24" path="res://Scripts/Player.gd" id="1_0bb2n"]
+[ext_resource type="Texture2D" uid="uid://crjsfs1du8ybm" path="res://Assets/Pixel art/robo_parado_spritesheet.png" id="2_6t5aa"]
 [ext_resource type="Texture2D" uid="uid://cnl8wwiy6tuvl" path="res://Assets/Pixel art/robo_andando_spritesheet.png" id="2_cvnsp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3smsa"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8erm5"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ek2"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx1dd"]
+atlas = ExtResource("2_6t5aa")
+region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
 atlas = ExtResource("2_cvnsp")
@@ -21,6 +38,23 @@ region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3smsa"]
 animations = [{
+"frames": [{
+"duration": 8.0,
+"texture": SubResource("AtlasTexture_3smsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8erm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ek2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tx1dd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6t5aa")
@@ -48,9 +82,8 @@ script = ExtResource("1_0bb2n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1937007021]
 sprite_frames = SubResource("SpriteFrames_3smsa")
-animation = &"walk"
-frame = 2
-frame_progress = 0.9462797
+animation = &"idle"
+frame_progress = 0.31080234
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1162238103]
 position = Vector2(0, 2)
