@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://yef2kcxrl77p"]
+
+[ext_resource type="Script" uid="uid://dodls52u4eido" path="res://Scripts/Door.gd" id="1_w6aom"]
+[ext_resource type="Texture2D" uid="uid://clm77cf628ss3" path="res://Assets/Pixel art/Borda da porta.png" id="2_p0e35"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fahql"]
+size = Vector2(20, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab4ky"]
+atlas = ExtResource("2_p0e35")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a43ba"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ab4ky")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Door" type="Area2D" unique_id=979792855 node_paths=PackedStringArray("prompt_label")]
+script = ExtResource("1_w6aom")
+prompt_label = NodePath("Label")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=850455586]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_fahql")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1619696513]
+sprite_frames = SubResource("SpriteFrames_a43ba")
+
+[node name="Label" type="Label" parent="." unique_id=1863406829]
+visible = false
+offset_left = -67.0
+offset_top = -37.0
+offset_right = 68.0
+offset_bottom = -14.0
+theme_override_font_sizes/font_size = 16
+text = "Aperte a tecla \"E\""
+horizontal_alignment = 1
+vertical_alignment = 1
