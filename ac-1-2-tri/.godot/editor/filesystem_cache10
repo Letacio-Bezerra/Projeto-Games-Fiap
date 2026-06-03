@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780503209
+::res://::1780508737
 icon.svg::CompressedTexture2D::2678538779694176350::1780501591::1780501611::1::::<><><>0<>0<>c84500f44685cf466280dc241681a442<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1780501591
-::res://Assets/Pixel art/::1780501712
+::res://Assets/Pixel art/::1780508895
 Borda da porta.png::CompressedTexture2D::5571691383843379232::1780501591::1780501612::1::::<><><>0<>0<>676898d7f6d16d0c9c9ebb8cb88ea9d7<>res://.godot/imported/Borda da porta.png-b67232294198b71e09d99532f1cab5c5.ctex::
 Cloud.png::CompressedTexture2D::1031817774786869369::1780501591::1780501612::1::::<><><>0<>0<>174a21f12f2660a8b6cadbf9fb51d3fd<>res://.godot/imported/Cloud.png-78173d9bc7bf552f38c7c8e917fe37e6.ctex::
 Dirt.png::CompressedTexture2D::103967268194596182::1780501591::1780501612::1::::<><><>0<>0<>0c13ba315fc9538a32d6f05af44f9e8b<>res://.godot/imported/Dirt.png-59290177702af1b8ba2244b1dce37924.ctex::
@@ -30,12 +30,15 @@ wall_main.png::CompressedTexture2D::946444464470538337::1780501591::1780501612::
 wall_midside.png::CompressedTexture2D::410355808445577569::1780501591::1780501612::1::::<><><>0<>0<>3047270083bc7987a119e06f964cac89<>res://.godot/imported/wall_midside.png-a42155f09584b6ffa0e0cf140b73bb1c.ctex::
 wall_spritesheet.png::CompressedTexture2D::7418258460915102655::1780501591::1780501612::1::::<><><>0<>0<>e135e8638cb446f300e5280bf7e941fc<>res://.godot/imported/wall_spritesheet.png-82501c10cba02d472dbeb51b93b28ce8.ctex::
 wall_upside.png::CompressedTexture2D::2465080684357273216::1780501591::1780501612::1::::<><><>0<>0<>a0393fa2a85e365fc7ce832beb94d039<>res://.godot/imported/wall_upside.png-02fc3c9f796c3412f20afe4a25058b30.ctex::
-::res://Assets/Pixel art/Robo/::1780502144
+::res://Assets/Pixel art/level_0/::1780508897
+level_0_spritesheet.png::CompressedTexture2D::3170978224929825947::1780508556::1780508899::1::::<><><>0<>0<>0fd284e3c7413e15a83d9c897a9ebf6a<>res://.godot/imported/level_0_spritesheet.png-296a5c5bc25bc43616d4548d1f0b0e9d.ctex::
+::res://Assets/Pixel art/Robo/::1780508738
 robo_andando_0.png::CompressedTexture2D::3354484969123233416::1780490804::1780502131::1::::<><><>0<>0<>b0d6264b4264c3ef874b00cd74d35dd2<>res://.godot/imported/robo_andando_0.png-2e45289959f8c3029fd95e5a702423f2.ctex::
 robo_andando_1.png::CompressedTexture2D::1568984195382345737::1780490831::1780502131::1::::<><><>0<>0<>c49d0b8cb00a598564cce7e725bcf876<>res://.godot/imported/robo_andando_1.png-781906d5807d3aa1f2b539774b028b12.ctex::
 robo_andando_2.png::CompressedTexture2D::7566676788577674225::1780490852::1780502131::1::::<><><>0<>0<>3a09443952375871b627a8451b205e84<>res://.godot/imported/robo_andando_2.png-37be20c953de35a9018271640a82a806.ctex::
 robo_andando_3.png::CompressedTexture2D::5972648135099701782::1780490859::1780502131::1::::<><><>0<>0<>48a54c71877062f48ccabd5ab7d4f9ee<>res://.godot/imported/robo_andando_3.png-8495e5cecce1e36161884bb06bb87b58.ctex::
 robo_andando_spritesheet.png::CompressedTexture2D::8637973998273979877::1780490977::1780502131::1::::<><><>0<>0<>d5fc3a10f307b237ed698dd1e6930e47<>res://.godot/imported/robo_andando_spritesheet.png-73c32a50cce30470b800f0f3b7e21e22.ctex::
+robo_andando_spritesheet_certo.png::CompressedTexture2D::5424694466762483665::1780503140::1780508738::1::::<><><>0<>0<>069a7d457a15826372b3ffe4e3530c25<>res://.godot/imported/robo_andando_spritesheet_certo.png-78c1c2b3515a89d3129928a72c531f90.ctex::
 robo_parado_1.png::CompressedTexture2D::6420266753929999769::1780500833::1780502131::1::::<><><>0<>0<>055857082f4a67c33e7d852313e904ef<>res://.godot/imported/robo_parado_1.png-25d3b95ba0d442e0e1f69e5743a61200.ctex::
 robo_parado_2.png::CompressedTexture2D::8112464551875801757::1780499275::1780502131::1::::<><><>0<>0<>966ca60fed73ecef384144fd11514004<>res://.godot/imported/robo_parado_2.png-04ec80e0d19f7e843edfa07333377eaa.ctex::
 robo_parado_3.png::CompressedTexture2D::7667421943792856936::1780499285::1780502131::1::::<><><>0<>0<>6a078f34c4147df5d026d509e9e1882e<>res://.godot/imported/robo_parado_3.png-01f4a2cdd0c2b5a94fabd3c790abf47e.ctex::
