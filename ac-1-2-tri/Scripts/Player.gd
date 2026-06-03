@@ -32,6 +32,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite_2d.play("walk")
 	else:
 		animated_sprite_2d.play("jump")
+		
 	# Apply movement
 	if direction:
 		velocity.x = direction * SPEED
