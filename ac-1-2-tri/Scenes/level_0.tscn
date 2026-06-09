@@ -69,3 +69,7 @@ position = Vector2(1, -45)
 
 [node name="SpawnPoint" type="Marker2D" parent="." unique_id=1767118061]
 position = Vector2(0, -20)
+
+[node name="Door2" parent="." unique_id=872107714 instance=ExtResource("4_pspvu")]
+position = Vector2(313, -16)
+target_scene = "res://Scenes/level_1.tscn"

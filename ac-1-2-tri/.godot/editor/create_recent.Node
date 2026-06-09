@@ -1,12 +1,14 @@
+TileMap
+Sprite2D
+Node2D
+TileMapLayer
 Label3D
 Label
 CollisionShape2D
 Marker2D
 AnimatedSprite2D
 Area2D
-TileMapLayer
 Node
 Camera2D
-Sprite2D
 StaticBody2D
 CharacterBody2D
