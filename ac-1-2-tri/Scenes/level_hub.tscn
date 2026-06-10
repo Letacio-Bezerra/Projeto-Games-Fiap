@@ -153,4 +153,4 @@ target_scene = "res://Scenes/level_1.tscn"
 position = Vector2(135, 16)
 
 [node name="Player" parent="level_hub" unique_id=2086417280 instance=ExtResource("6_bww6d")]
-position = Vector2(22, -15)
+position = Vector2(23, 16)
