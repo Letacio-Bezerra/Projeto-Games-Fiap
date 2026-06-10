@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://blgbsvtxsgl84" path="res://Assets/Pixel art/level_0/level_0_spritesheet.png" id="4_xrdnt"]
 [ext_resource type="Texture2D" uid="uid://bgp3mupuuokt5" path="res://Assets/Pixel art/Porta Vermelha.png" id="5_wrinw"]
 [ext_resource type="PackedScene" uid="uid://t4eba58qrakf" path="res://Scenes/player.tscn" id="7_lsmp6"]
+[ext_resource type="Texture2D" uid="uid://uu3fopl2reep" path="res://Assets/Pixel art/level_run/luz_runlevel.png" id="8_xrdnt"]
+[ext_resource type="Script" uid="uid://dofcqpaqot8h6" path="res://Scenes/luz.gd" id="9_wrinw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chwpn"]
 texture = ExtResource("1_6444e")
@@ -85,6 +87,20 @@ tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_6r07y")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_wrinw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_xrdnt")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"luz",
+"speed": 8.0
+}]
+
 [node name="run_for_your_life" type="Node2D" unique_id=607506445]
 texture_filter = 1
 script = ExtResource("1_evi0p")
@@ -149,4 +165,13 @@ scale = Vector2(2.6875, 2.6875)
 texture = ExtResource("5_wrinw")
 
 [node name="Player" parent="." unique_id=2086417280 instance=ExtResource("7_lsmp6")]
-position = Vector2(-502, -47)
+position = Vector2(-497, -154)
+
+[node name="Luz" type="AnimatedSprite2D" parent="." unique_id=1903880967]
+position = Vector2(-321.99997, -172.5)
+scale = Vector2(124.6875, 12.15625)
+sprite_frames = SubResource("SpriteFrames_wrinw")
+animation = &"luz"
+frame = 1
+frame_progress = 0.80301154
+script = ExtResource("9_wrinw")
