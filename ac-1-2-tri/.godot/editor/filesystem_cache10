@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781105027
+::res://::1781126821
 icon.svg::CompressedTexture2D::2678538779694176350::1780482495::1780483465::1::::<><><>0<>0<>c84500f44685cf466280dc241681a442<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Assets/::1781102964
 ::res://Assets/Enemies/::1781102966
@@ -23,7 +23,7 @@ snailShell.png::CompressedTexture2D::7759857292443947404::1778707070::1781102966
 snailShell_upsidedown.png::CompressedTexture2D::5617557663669166157::1778707070::1781102966::1::::<><><>0<>0<>b6c3213d846efabdf3675ed915274d7a<>res://.godot/imported/snailShell_upsidedown.png-19f749803eba19f4d812bfbcf36f9331.ctex::
 snailWalk1.png::CompressedTexture2D::2865847647032175337::1778707070::1781102966::1::::<><><>0<>0<>b685b5a85529675468781a9cb44901ce<>res://.godot/imported/snailWalk1.png-23dbfcf3251044c01dbe96ca1e3e61fc.ctex::
 snailWalk2.png::CompressedTexture2D::6064182215534913732::1778707070::1781102966::1::::<><><>0<>0<>2f3603516078dfe3b38ec53d7c8335a4<>res://.godot/imported/snailWalk2.png-187f6396705c9ba0048ec5da15c3855f.ctex::
-::res://Assets/Pixel art/::1781105126
+::res://Assets/Pixel art/::1781126935
 Borda da porta.png::CompressedTexture2D::5571691383843379232::1780483418::1780483465::1::::<><><>0<>0<>676898d7f6d16d0c9c9ebb8cb88ea9d7<>res://.godot/imported/Borda da porta.png-b67232294198b71e09d99532f1cab5c5.ctex::
 Cloud.png::CompressedTexture2D::1031817774786869369::1780488218::1780497900::1::::<><><>0<>0<>174a21f12f2660a8b6cadbf9fb51d3fd<>res://.godot/imported/Cloud.png-78173d9bc7bf552f38c7c8e917fe37e6.ctex::
 Dirt.png::CompressedTexture2D::103967268194596182::1780483418::1780483465::1::::<><><>0<>0<>0c13ba315fc9538a32d6f05af44f9e8b<>res://.godot/imported/Dirt.png-59290177702af1b8ba2244b1dce37924.ctex::
@@ -51,7 +51,7 @@ wall_main.png::CompressedTexture2D::946444464470538337::1780497894::1780497900::
 wall_midside.png::CompressedTexture2D::410355808445577569::1780497894::1780497900::1::::<><><>0<>0<>3047270083bc7987a119e06f964cac89<>res://.godot/imported/wall_midside.png-a42155f09584b6ffa0e0cf140b73bb1c.ctex::
 wall_spritesheet.png::CompressedTexture2D::7418258460915102655::1780497894::1780497900::1::::<><><>0<>0<>e135e8638cb446f300e5280bf7e941fc<>res://.godot/imported/wall_spritesheet.png-82501c10cba02d472dbeb51b93b28ce8.ctex::
 wall_upside.png::CompressedTexture2D::2465080684357273216::1780497894::1780497900::1::::<><><>0<>0<>a0393fa2a85e365fc7ce832beb94d039<>res://.godot/imported/wall_upside.png-02fc3c9f796c3412f20afe4a25058b30.ctex::
-::res://Assets/Pixel art/captao_clark/::1781105131
+::res://Assets/Pixel art/captao_clark/::1781105137
 capitao_clark_spritesheet.png::CompressedTexture2D::3554227009058412726::1781105098::1781105137::1::::<><><>0<>0<>a9ff00772aed91e387262b460680441d<>res://.godot/imported/capitao_clark_spritesheet.png-7f64cb9841e17706062763c3d75599c2.ctex::
 ::res://Assets/Pixel art/level_0/::1780523824
 level_0_spritesheet.png::CompressedTexture2D::3170978224929825947::1780523807::1780523824::1::::<><><>0<>0<>0fd284e3c7413e15a83d9c897a9ebf6a<>res://.godot/imported/level_0_spritesheet.png-296a5c5bc25bc43616d4548d1f0b0e9d.ctex::
@@ -62,6 +62,8 @@ parede_normal_runlevel.png::CompressedTexture2D::2390981109480304107::1781012921
 parede_runlevel.png::CompressedTexture2D::7732370737272562954::1781012921::1781013004::1::::<><><>0<>0<>e2360847e394c94c852ff92c64f1cf84<>res://.godot/imported/parede_runlevel.png-aaddc876052e15fb6f3a848c5406f694.ctex::
 spriteshit_runlevel.png::CompressedTexture2D::1038222583124679850::1781012921::1781013004::1::::<><><>0<>0<>d5e8f2feae92b7b55cf27ca9986819e0<>res://.godot/imported/spriteshit_runlevel.png-cf0e66f3c8afadd0d98d81e6201583f4.ctex::
 underground_runlevel.png::CompressedTexture2D::8150726927198166868::1781012921::1781013004::1::::<><><>0<>0<>5a92a813466d6594491fad7860ad0351<>res://.godot/imported/underground_runlevel.png-5ac0ca6bf58d415d5bad988063530761.ctex::
+::res://Assets/Pixel art/mono_bola/::1781126941
+almondega_clark_spritesheet.png::CompressedTexture2D::8440432662552138883::1781126864::1781126941::1::::<><><>0<>0<>e679495c116f4f7eb77a9509b10122a8<>res://.godot/imported/almondega_clark_spritesheet.png-64de11aef90d72c149d8168275966a68.ctex::
 ::res://Assets/Pixel art/Robo/::1780523824
 robo_andando_0.png::CompressedTexture2D::3354484969123233416::1780501810::1780501817::1::::<><><>0<>0<>b0d6264b4264c3ef874b00cd74d35dd2<>res://.godot/imported/robo_andando_0.png-2e45289959f8c3029fd95e5a702423f2.ctex::
 robo_andando_1.png::CompressedTexture2D::1568984195382345737::1780501810::1780501817::1::::<><><>0<>0<>c49d0b8cb00a598564cce7e725bcf876<>res://.godot/imported/robo_andando_1.png-781906d5807d3aa1f2b539774b028b12.ctex::
@@ -150,17 +152,17 @@ p3_walk08.png::CompressedTexture2D::3695844726067187684::1778707070::1780483812:
 p3_walk09.png::CompressedTexture2D::6502230283284777006::1778707070::1780483812::1::::<><><>0<>0<>4c0f4e8b54035648f09a07eb09f8722e<>res://.godot/imported/p3_walk09.png-cded7a5ea7908bfa9e32ea235003624a.ctex::
 p3_walk10.png::CompressedTexture2D::1129120549901526758::1778707070::1780483812::1::::<><><>0<>0<>2d3cd600a674e11b646ab25389f28fec<>res://.godot/imported/p3_walk10.png-ea1f47581f2f8f14baa1cc5e1ba5444e.ctex::
 p3_walk11.png::CompressedTexture2D::2292641101619355547::1778707070::1780483812::1::::<><><>0<>0<>e9801082665949f99ba5fb458a7e9aa8<>res://.godot/imported/p3_walk11.png-86c1888f9bc41bf7b39d653981ab45db.ctex::
-::res://Scenes/::1781105027
+::res://Scenes/::1781108080
 door.tscn::PackedScene::1693142089119594007::1780527661::0::1::::<><><>0<>0<><>::uid://dodls52u4eido::::res://Scripts/Door.gd<>uid://clm77cf628ss3::::res://Assets/Pixel art/Borda da porta.png
-enemy.tscn::PackedScene::8508130711459447792::1781104876::0::1::::<><><>0<>0<><>::uid://cotku4e7n44ki::::res://Scripts/enemy.gd<>uid://c87esgfj7awho::::res://Assets/Enemies/slimeDead.png<>uid://dg2r02yfg62xa::::res://Assets/Enemies/slimeWalk1.png<>uid://bmwirthk8mpii::::res://Assets/Enemies/slimeWalk2.png
-killzone.tscn::PackedScene::1139748688375193472::1781105027::0::1::::<><><>0<>0<><>::uid://bfmqhf0mg0nde::::res://Scripts/killzone.gd
-level_0.tscn::PackedScene::8019459443186736210::1781013095::0::1::::<><><>0<>0<><>::uid://be7w4p8fo3fds::::res://Scripts/marker_2d.gd<>uid://t4eba58qrakf::::res://Scenes/player.tscn<>uid://blgbsvtxsgl84::::res://Assets/Pixel art/level_0/level_0_spritesheet.png<>uid://yef2kcxrl77p::::res://Scenes/door.tscn
+enemy.tscn::PackedScene::8508130711459447792::1781126998::0::1::::<><><>0<>0<><>::uid://cotku4e7n44ki::::res://Scripts/enemy.gd<>uid://bqvxundd1uifm::::res://Assets/Pixel art/captao_clark/capitao_clark_spritesheet.png<>uid://qidq2rbl4nn1::::res://Scenes/killzone.tscn
+killzone.tscn::PackedScene::1139748688375193472::1781106726::0::1::::<><><>0<>0<><>::uid://bfmqhf0mg0nde::::res://Scripts/killzone.gd
+level_0.tscn::PackedScene::8019459443186736210::1781127010::0::1::::<><><>0<>0<><>::uid://be7w4p8fo3fds::::res://Scripts/marker_2d.gd<>uid://t4eba58qrakf::::res://Scenes/player.tscn<>uid://blgbsvtxsgl84::::res://Assets/Pixel art/level_0/level_0_spritesheet.png<>uid://yef2kcxrl77p::::res://Scenes/door.tscn
 level_1.tscn::PackedScene::2818763391321714986::1781103125::0::1::::<><><>0<>0<><>::uid://o16myv3h52mg::::res://Assets/Pixel art/level_run/spriteshit_runlevel.png<>uid://be7w4p8fo3fds::::res://Scripts/marker_2d.gd<>uid://clm77cf628ss3::::res://Assets/Pixel art/Borda da porta.png<>uid://yef2kcxrl77p::::res://Scenes/door.tscn<>uid://blgbsvtxsgl84::::res://Assets/Pixel art/level_0/level_0_spritesheet.png<>uid://bgp3mupuuokt5::::res://Assets/Pixel art/Porta Vermelha.png<>uid://t4eba58qrakf::::res://Scenes/player.tscn<>uid://uu3fopl2reep::::res://Assets/Pixel art/level_run/luz_runlevel.png
-level_hub.tscn::PackedScene::3513398111908431133::1781104612::0::1::::<><><>0<>0<><>::uid://ddxpvr1u8d5ip::::res://Assets/Pixel art/wall_spritesheet.png<>uid://cipc7bvu7m7fl::::res://Assets/Pixel art/SpriteSheet.png<>uid://cqbdrwdw6puju::::res://Assets/Pixel art/floor_spritesheet.png<>uid://ckwym4bm5yudf::::res://Assets/Pixel art/floor_spritesheet2.png<>uid://yef2kcxrl77p::::res://Scenes/door.tscn<>uid://t4eba58qrakf::::res://Scenes/player.tscn<>uid://dthnw1ioegt41::::res://Scenes/enemy.tscn
+level_hub.tscn::PackedScene::3513398111908431133::1781108080::0::1::::<><><>0<>0<><>::uid://ddxpvr1u8d5ip::::res://Assets/Pixel art/wall_spritesheet.png<>uid://cipc7bvu7m7fl::::res://Assets/Pixel art/SpriteSheet.png<>uid://cqbdrwdw6puju::::res://Assets/Pixel art/floor_spritesheet.png<>uid://ckwym4bm5yudf::::res://Assets/Pixel art/floor_spritesheet2.png<>uid://yef2kcxrl77p::::res://Scenes/door.tscn<>uid://t4eba58qrakf::::res://Scenes/player.tscn
 player.tscn::PackedScene::1393699685620870913::1780527282::0::1::::<><><>0<>0<><>::uid://kruotuhycb24::::res://Scripts/Player.gd<>uid://cwxc5viwy1l7f::::res://Assets/Pixel art/Robo/robo_parado_spritesheet_certo.png<>uid://nu1bynq7ghkg::::res://Assets/Pixel art/Robo/robo_pulando_lado_spritesheet.png<>uid://cjj06pwm18tr2::::res://Assets/Pixel art/Robo/robo_andando_spritesheet_certo.png
-::res://Scripts/::1781105027
+::res://Scripts/::1781108014
 Door.gd::GDScript::8148800644842507460::1780525567::0::1::::<>Area2D<><>0<>0<><>::
-enemy.gd::GDScript::5795352772280405256::1781104565::0::1::::<>CharacterBody2D<><>0<>0<><>::
-killzone.gd::GDScript::2763121709164679942::1781105018::0::1::::<>Area2D<><>0<>0<><>::
+enemy.gd::GDScript::5795352772280405256::1781106796::0::1::::<>CharacterBody2D<><>0<>0<><>::
+killzone.gd::GDScript::2763121709164679942::1781105391::0::1::::<>Area2D<><>0<>0<><>::
 marker_2d.gd::GDScript::2734624547315037740::1780526050::0::1::::<>Node2D<><>0<>0<><>::
-Player.gd::GDScript::738223228359279655::1780523796::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.gd::GDScript::738223228359279655::1781108014::0::1::::<>CharacterBody2D<><>0<>0<><>::

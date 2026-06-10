@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://t4eba58qrakf" path="res://Scenes/player.tscn" id="2_8ryqv"]
 [ext_resource type="Texture2D" uid="uid://blgbsvtxsgl84" path="res://Assets/Pixel art/level_0/level_0_spritesheet.png" id="2_31js7"]
 [ext_resource type="PackedScene" uid="uid://yef2kcxrl77p" path="res://Scenes/door.tscn" id="4_pspvu"]
-[ext_resource type="PackedScene" uid="uid://dthnw1ioegt41" path="res://Scenes/enemy.tscn" id="5_vuqrd"]
+[ext_resource type="PackedScene" uid="uid://dthnw1ioegt41" path="res://Scenes/enemy_clark.tscn" id="5_vuqrd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pspvu"]
 texture = ExtResource("2_31js7")
@@ -75,5 +75,5 @@ position = Vector2(0, -20)
 position = Vector2(313, -16)
 target_scene = "res://Scenes/level_1.tscn"
 
-[node name="Enemy" parent="." unique_id=2076807190 instance=ExtResource("5_vuqrd")]
-position = Vector2(279, -32)
+[node name="Enemy_Clark" parent="." unique_id=2076807190 instance=ExtResource("5_vuqrd")]
+position = Vector2(86, -32)
