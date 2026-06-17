@@ -5,9 +5,10 @@ const GRAVITY = 800.0
 
 var direction = 1
 
+@export var invert_patrol: bool = false
+
 # Variáveis que referenciam os nós da cena
 @onready var floor_left: RayCast2D = $FloorLeft # após o $, o nome deve ser o mesmo
-
 # nome do nó
 @onready var floor_right: RayCast2D = $FloorRight
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
@@ -18,9 +19,9 @@ func _physics_process(delta):
 		velocity.y += GRAVITY * delta
 	 # Inverte ao detectar borda com o método padrão do Raycast2D is_colliding()
 	if not floor_left.is_colliding():
-		direction = -1
+		direction = -1 if invert_patrol else 1
 	if not floor_right.is_colliding():
-		direction = 1
+		direction = 1 if invert_patrol else -1
 		# Aplica velocidade no eixo x
 	velocity.x = direction * SPEED
 	# Vira o sprite do personagem se estiver indo para a direita

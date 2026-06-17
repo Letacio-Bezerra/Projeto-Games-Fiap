@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://0rkkr3amh87s"]
+
+[ext_resource type="Script" uid="uid://cs3wtuhdwtc1e" path="res://Scripts/colecionaveis.gd" id="1_5jj65"]
+[ext_resource type="Texture2D" uid="uid://duscdhtm5mkto" path="res://Assets/Pixel art/colecionaveis/colecionavel_dois.png" id="2_7nw6x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rsj1"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4ru6"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23q14"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebv71"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ci52y"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lp1rh"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c77vn"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_htwk6"]
+atlas = ExtResource("2_7nw6x")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2gsyj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rsj1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4ru6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23q14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebv71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ci52y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lp1rh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c77vn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_htwk6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4d42"]
+size = Vector2(17, 23)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7nw6x"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 80.0
+initial_velocity_max = 150.0
+gravity = Vector3(0, 98, 0)
+scale_min = 2.0
+scale_max = 4.0
+color = Color(1, 0.84313726, 0, 1)
+
+[node name="dois" type="Area2D" unique_id=549571150]
+script = ExtResource("1_5jj65")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=869839013]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_2gsyj")
+autoplay = "default"
+frame = 5
+frame_progress = 0.81922996
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1372789700]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_h4d42")
+
+[node name="Particles" type="GPUParticles2D" parent="." unique_id=1268041610]
+emitting = false
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_7nw6x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

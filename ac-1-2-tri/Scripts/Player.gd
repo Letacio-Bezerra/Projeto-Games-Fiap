@@ -2,6 +2,9 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+signal died # GameManager resetar fase, HUD mostrar tela de morte
+signal health_changed(new_health) # HUD atualizar corações
+
 const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 

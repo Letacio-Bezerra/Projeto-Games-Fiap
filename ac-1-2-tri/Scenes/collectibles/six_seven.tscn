@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://cghw8bjbappmy"]
+
+[ext_resource type="Script" uid="uid://cs3wtuhdwtc1e" path="res://Scripts/colecionaveis.gd" id="1_hbpj4"]
+[ext_resource type="Texture2D" uid="uid://c35qur1cewkk1" path="res://Assets/Pixel art/colecionaveis/colecionavel_67.png" id="1_kcqsh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbpj4"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibovm"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lcpq"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j0dsb"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8h8q"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hj26i"]
+atlas = ExtResource("1_kcqsh")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qogi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbpj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibovm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lcpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j0dsb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8h8q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hj26i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.7
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0awxu"]
+size = Vector2(28, 26)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2vj30"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 80.0
+initial_velocity_max = 150.0
+gravity = Vector3(0, 98, 0)
+scale_min = 2.0
+scale_max = 4.0
+color = Color(1, 0.84313726, 0, 1)
+
+[node name="six_seven" type="Area2D" unique_id=710151850]
+script = ExtResource("1_hbpj4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=639130967]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_0qogi")
+autoplay = "default"
+frame = 1
+frame_progress = 0.50061685
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1871307843]
+shape = SubResource("RectangleShape2D_0awxu")
+
+[node name="Particles" type="GPUParticles2D" parent="." unique_id=646169222]
+emitting = false
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_2vj30")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

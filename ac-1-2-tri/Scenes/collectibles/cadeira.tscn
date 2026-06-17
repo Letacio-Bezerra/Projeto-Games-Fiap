@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://u5jm617hdx4s"]
+
+[ext_resource type="Script" uid="uid://cs3wtuhdwtc1e" path="res://Scripts/colecionaveis.gd" id="1_ldeau"]
+[ext_resource type="Texture2D" uid="uid://b3efwd3bvs8x5" path="res://Assets/Pixel art/colecionaveis/colecionavel_banco.png" id="2_ldeau"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldeau"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nfhj"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5t3c"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6eosc"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk5p0"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e8yxe"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_74oc0"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6a8ui"]
+atlas = ExtResource("2_ldeau")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ggfrq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ldeau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nfhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5t3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6eosc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sk5p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e8yxe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_74oc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6a8ui")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c0q02"]
+size = Vector2(17, 24)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a2uk4"]
+particle_flag_disable_z = true
+direction = Vector3(0, -1, 0)
+initial_velocity_min = 80.0
+initial_velocity_max = 150.0
+gravity = Vector3(0, 98, 0)
+scale_min = 2.0
+scale_max = 4.0
+color = Color(1, 0.84313726, 0, 1)
+
+[node name="Cadeira" type="Area2D" unique_id=2124686556]
+script = ExtResource("1_ldeau")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1430539956]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ggfrq")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1592225242]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_c0q02")
+
+[node name="Particles" type="GPUParticles2D" parent="." unique_id=1264275335]
+emitting = false
+lifetime = 0.4
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_a2uk4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
