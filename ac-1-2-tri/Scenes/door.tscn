@@ -22,6 +22,8 @@ animations = [{
 }]
 
 [node name="Door" type="Area2D" unique_id=979792855 node_paths=PackedStringArray("prompt_label")]
+collision_layer = 8
+collision_mask = 4
 script = ExtResource("1_w6aom")
 prompt_label = NodePath("Label")
 
