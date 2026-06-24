@@ -5,6 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://yef2kcxrl77p" path="res://Scenes/door.tscn" id="3_qikqb"]
 [ext_resource type="PackedScene" uid="uid://t4eba58qrakf" path="res://Scenes/player.tscn" id="4_r44gs"]
 [ext_resource type="PackedScene" uid="uid://dthnw1ioegt41" path="res://Scenes/enemys/enemy_clark.tscn" id="5_ci66b"]
+[ext_resource type="PackedScene" uid="uid://cj3jd1rf2be14" path="res://Scenes/hud.tscn" id="6_wtmes"]
+[ext_resource type="PackedScene" uid="uid://duhe7tinigiw0" path="res://Scenes/menu/pause_menu.tscn" id="7_qikqb"]
+[ext_resource type="PackedScene" uid="uid://u5jm617hdx4s" path="res://Scenes/collectibles/cadeira.tscn" id="8_r44gs"]
+[ext_resource type="PackedScene" uid="uid://7508cx8501j6" path="res://Scenes/collectibles/hat_clark.tscn" id="9_ci66b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pspvu"]
 texture = ExtResource("2_wtmes")
@@ -77,3 +81,13 @@ target_scene = "res://Scenes/levels/level_1.tscn"
 
 [node name="Enemy_Clark" parent="." unique_id=2076807190 instance=ExtResource("5_ci66b")]
 position = Vector2(72, -32)
+
+[node name="hud" parent="." unique_id=1489425925 instance=ExtResource("6_wtmes")]
+
+[node name="pause_menu" parent="." unique_id=364659798 instance=ExtResource("7_qikqb")]
+
+[node name="Cadeira" parent="." unique_id=2124686556 instance=ExtResource("8_r44gs")]
+position = Vector2(340, -12)
+
+[node name="hat_clark" parent="." unique_id=689328562 instance=ExtResource("9_ci66b")]
+position = Vector2(162, -69)

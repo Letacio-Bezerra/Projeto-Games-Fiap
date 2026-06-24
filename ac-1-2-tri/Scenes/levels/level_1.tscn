@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://t4eba58qrakf" path="res://Scenes/player.tscn" id="7_lsmp6"]
 [ext_resource type="Texture2D" uid="uid://uu3fopl2reep" path="res://Assets/Pixel art/level_run/luz_runlevel.png" id="8_xrdnt"]
 [ext_resource type="PackedScene" uid="uid://b4qct6ia0rpod" path="res://Scenes/enemys/enemy_mono_bola.tscn" id="9_wrinw"]
+[ext_resource type="PackedScene" uid="uid://cj3jd1rf2be14" path="res://Scenes/hud.tscn" id="10_s5b24"]
+[ext_resource type="PackedScene" uid="uid://duhe7tinigiw0" path="res://Scenes/menu/pause_menu.tscn" id="11_sskdo"]
+[ext_resource type="PackedScene" uid="uid://0rkkr3amh87s" path="res://Scenes/collectibles/powerup/powerup_speed.tscn" id="12_041ro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chwpn"]
 texture = ExtResource("1_6444e")
@@ -178,3 +181,10 @@ animation = &"luz"
 autoplay = "luz"
 frame = 1
 frame_progress = 0.80301154
+
+[node name="hud" parent="." unique_id=1489425925 instance=ExtResource("10_s5b24")]
+
+[node name="pause_menu" parent="." unique_id=364659798 instance=ExtResource("11_sskdo")]
+
+[node name="powerup_speed" parent="." unique_id=549571150 instance=ExtResource("12_041ro")]
+position = Vector2(-304, -13)

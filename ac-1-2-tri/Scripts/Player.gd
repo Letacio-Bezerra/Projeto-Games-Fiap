@@ -1,12 +1,22 @@
 extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+# variável de referência à HUD
+@onready var hud: CanvasLayer = $"../hud"
+@onready var spawn_point: Marker2D = $"../SpawnPoint"
 
 signal died # GameManager resetar fase, HUD mostrar tela de morte
 signal health_changed(new_health) # HUD atualizar corações
 
-const SPEED = 100.0
+var SPEED = 100.0
 const JUMP_VELOCITY = -400.0
+
+# velocidade durante o power-up
+const SPEED_BOOST = 200.0
+# segundos de duração
+const BOOST_DURATION = 5.0
+# variável que controla quando o power-up está ativado ou não
+var boosted = false
 
 
 func _physics_process(delta: float) -> void:
@@ -45,8 +55,31 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func die():
-# get_tree() — acessa o SceneTree, que é o gerenciador geral do jogo.
-# É por ele que você controla cenas, pausa o jogo, fecha o jogo, etc.
-# .reload_current_scene() — reinicia a cena atual do zero, como se
-# você tivesse fechado e reaberto ela.
-	get_tree().reload_current_scene()
+	tomar_dano(1)
+# função que recebe a quantidade de dano via parâmetro e aplica à vidas
+func tomar_dano(dano:int) -> void:
+	GameManager.vidas -= dano
+	if GameManager.vidas <= 0:
+		get_tree().change_scene_to_file("res://Scenes/menu/game_over.tscn")
+	else:
+		respawn()
+	hud.atualizar_vidas()
+
+func respawn() -> void:
+	position = spawn_point.position
+
+# função que aplica o aumento de velocidade
+func apply_speed_boost() -> void:
+	if boosted:
+		return
+	boosted = true
+	SPEED = SPEED_BOOST
+	await get_tree().create_timer(BOOST_DURATION).timeout
+	SPEED = 100
+	boosted = false
+
+
+func _on_powerup_speed_speed_collected(body: Variant) -> void:
+	if body.has_method("apply_speed_boost"):
+		body.apply_speed_boost()
+	pass # Replace with function body.

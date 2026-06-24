@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cj3jd1rf2be14"]
+
+[ext_resource type="FontFile" uid="uid://bnn85akxy08ce" path="res://Assets/fonts/Jersey10-Regular.ttf" id="1_e0onf"]
+[ext_resource type="Script" uid="uid://cjmku5ixm1hqn" path="res://Scripts/hud.gd" id="1_fccik"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fccik"]
+font = ExtResource("1_e0onf")
+font_size = 32
+
+[node name="hud" type="CanvasLayer" unique_id=1489425925]
+script = ExtResource("1_fccik")
+
+[node name="Control" type="Control" parent="." unique_id=1184617384]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthLabel" type="Label" parent="Control" unique_id=1652654266]
+layout_mode = 0
+offset_left = 972.0
+offset_top = 8.0
+offset_right = 1023.0
+offset_bottom = 43.0
+text = "Vida:"
+label_settings = SubResource("LabelSettings_fccik")

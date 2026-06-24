@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dsvehvxmdvh8g"]
+
+[ext_resource type="Script" uid="uid://7rr6qmiitmit" path="res://Scripts/menu_inicial.gd" id="1_e4d8p"]
+[ext_resource type="Texture2D" uid="uid://bolavgkec6g7p" path="res://Assets/Pixel art/hud/backgrond.png" id="1_r68fw"]
+[ext_resource type="FontFile" uid="uid://bnn85akxy08ce" path="res://Assets/fonts/Jersey10-Regular.ttf" id="2_envsn"]
+[ext_resource type="Texture2D" uid="uid://bg3tx8bplgmoc" path="res://Assets/Pixel art/hud/play_buttom.png" id="3_envsn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e4d8p"]
+font = ExtResource("2_envsn")
+font_size = 192
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e4d8p"]
+texture = ExtResource("3_envsn")
+
+[node name="menuInicial" type="Control" unique_id=1604255185]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e4d8p")
+
+[node name="GameBackground" type="TextureRect" parent="." unique_id=448278179]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_r68fw")
+
+[node name="TituloJogoLabelLabel" type="Label" parent="." unique_id=226337476]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 2.0
+offset_right = 786.0
+offset_bottom = 209.0
+text = "Async"
+label_settings = SubResource("LabelSettings_e4d8p")
+
+[node name="JogarButton" type="Button" parent="." unique_id=1459899587]
+layout_mode = 0
+offset_left = 498.0
+offset_top = 220.0
+offset_right = 658.0
+offset_bottom = 273.0
+theme_override_fonts/font = ExtResource("2_envsn")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_e4d8p")
+text = "Play"
+
+[connection signal="pressed" from="JogarButton" to="." method="_on_jogar_button_pressed"]
