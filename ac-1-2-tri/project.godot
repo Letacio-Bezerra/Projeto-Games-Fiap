@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="ac1-2tri"
+config/name="Async"
+config/version="0"
 run/main_scene="uid://dsvehvxmdvh8g"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
