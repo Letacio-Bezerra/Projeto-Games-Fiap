@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://dj3le6o4bdx58"]
 
-[node name="caixa_1" type="Area2D" unique_id=2051615473]
+[ext_resource type="Texture2D" uid="uid://d4dfm6gdcvh1" path="res://Assets/Pixel art/level_0/caixa1.png" id="1_82o6f"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=507860253]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6k6i4"]
+size = Vector2(32, 32)
+
+[node name="caixa_1" type="Area2D" unique_id=2051615473]
+texture_filter = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=705846518]
+texture = ExtResource("1_82o6f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=507860253]
+shape = SubResource("RectangleShape2D_6k6i4")

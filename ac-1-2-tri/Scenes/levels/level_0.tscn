@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cj3jd1rf2be14" path="res://Scenes/hud.tscn" id="6_wtmes"]
 [ext_resource type="PackedScene" uid="uid://u5jm617hdx4s" path="res://Scenes/collectibles/cadeira.tscn" id="8_r44gs"]
 [ext_resource type="PackedScene" uid="uid://7508cx8501j6" path="res://Scenes/collectibles/hat_clark.tscn" id="9_ci66b"]
+[ext_resource type="PackedScene" uid="uid://dj3le6o4bdx58" path="res://Scenes/objects/caixa_1.tscn" id="9_i7gcy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pspvu"]
 texture = ExtResource("2_wtmes")
@@ -58,6 +59,11 @@ sources/0 = SubResource("TileSetAtlasSource_pspvu")
 
 [node name="level0" type="Node2D" unique_id=614313834]
 script = ExtResource("1_d8m2y")
+
+[node name="Node" type="Node" parent="." unique_id=1590331617]
+
+[node name="caixa_1" parent="Node" unique_id=2051615473 instance=ExtResource("9_i7gcy")]
+position = Vector2(368, -16)
 
 [node name="mapa" type="TileMapLayer" parent="." unique_id=939395941]
 texture_filter = 1
