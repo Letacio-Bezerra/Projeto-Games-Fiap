@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cokkq6soekflp"]
 
 [ext_resource type="Texture2D" uid="uid://blgbsvtxsgl84" path="res://Assets/Pixel art/level_0/level_0_spritesheet.png" id="1_s4d23"]
+[ext_resource type="Texture2D" uid="uid://bfr8mdsrt03cg" path="res://Assets/Pixel art/level_0/caixa_spritesheet.png" id="2_yg74n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yg74n"]
 texture = ExtResource("1_s4d23")
@@ -41,11 +42,22 @@ texture_region_size = Vector2i(32, 32)
 2:5/0 = 0
 3:5/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8q77"]
+texture = ExtResource("2_yg74n")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
 [sub_resource type="TileSet" id="TileSet_r8q77"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 8
 physics_layer_0/collision_mask = 4
 sources/0 = SubResource("TileSetAtlasSource_yg74n")
+sources/1 = SubResource("TileSetAtlasSource_r8q77")
 
 [node name="Caixas" type="TileMapLayer" unique_id=582353451]
 tile_set = SubResource("TileSet_r8q77")
