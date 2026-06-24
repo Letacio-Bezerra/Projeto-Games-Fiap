@@ -16,7 +16,7 @@ func _input(event) -> void:
 			get_tree().paused = false
 		else:
 			show()
-	get_tree().paused = true
+	get_tree().paused = false
 
 # função que executa quando o botão Continuar é clicado, removendo
 # o estado de pause da cena para voltar o jogo e escondendo o menu

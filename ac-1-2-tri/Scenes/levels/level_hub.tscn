@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://t4eba58qrakf" path="res://Scenes/player.tscn" id="6_ejglo"]
 [ext_resource type="PackedScene" uid="uid://cj3jd1rf2be14" path="res://Scenes/hud.tscn" id="8_axtit"]
 [ext_resource type="PackedScene" uid="uid://cghw8bjbappmy" path="res://Scenes/collectibles/six_seven.tscn" id="10_ejglo"]
+[ext_resource type="PackedScene" uid="uid://duhe7tinigiw0" path="res://Scenes/menu/pause_menu.tscn" id="10_wakeg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0f350"]
 texture = ExtResource("1_gjady")
@@ -164,3 +165,5 @@ position = Vector2(23, 16)
 
 [node name="six_seven" parent="." unique_id=710151850 instance=ExtResource("10_ejglo")]
 position = Vector2(-1857, 18)
+
+[node name="pause_menu" parent="." unique_id=364659798 instance=ExtResource("10_wakeg")]
